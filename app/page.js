@@ -213,9 +213,7 @@ export default function DataBridgeBIWebsite() {
         >
           <div style={cardStyle}>
             <div style={sectionTitle}>About DataBridge BI</div>
-            <h2 style={{ fontSize: "2.2rem", fontWeight: 800, margin: "0 0 18px 0" }}>
-              Founded by Afreen Fatima
-            </h2>
+            <div style={sectionTitle}>Founded by Afreen Fatima</div>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem" }}>
               DataBridge BI was founded by Afreen Fatima, a Data Integration Specialist with over 7 years of experience in data science and data analytics. Her work focuses on transforming complex, disconnected business data into clear, automated, and reliable reporting systems.
             </p>
@@ -231,7 +229,7 @@ export default function DataBridgeBIWebsite() {
             <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#a16207", marginBottom: "10px" }}>
               CEO & Founder
             </div>
-            <h3 style={{ fontSize: "1.8rem", fontWeight: 800, margin: "0 0 10px 0" }}>Afreen Fatima</h3>
+            
             <p style={{ color: "#4b5563", lineHeight: 1.8, marginTop: 0 }}>
               Power BI Specialist | Data Integration & Pipeline Expert
             </p>
