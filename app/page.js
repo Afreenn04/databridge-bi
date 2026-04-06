@@ -1,6 +1,11 @@
 export default function DataBridgeBIWebsite() {
   const services = [
     {
+      title: "Power Platform & Dataflows",
+      description:
+        "Design and implement Power Platform solutions including Power Automate, Power Apps, and Power BI Dataflows for scalable and automated data processing.",
+    },
+    {
       title: "Power BI Dashboards",
       description:
         "Interactive dashboards for sales, marketing, finance, and operations with a clear executive-friendly design.",
@@ -26,7 +31,7 @@ export default function DataBridgeBIWebsite() {
     "7+ years in data science and analytics",
     "Power BI specialist with PL-300 certification",
     "Master’s in Data Science from Robert Gordon University",
-    "Experience in API integrations, ETL, and CRM reporting",
+    "Experience in API integrations, ETL, CRM reporting, and Power Platform dataflows",
   ];
 
   const sectionTitle = {
@@ -118,7 +123,7 @@ export default function DataBridgeBIWebsite() {
                 marginBottom: "28px",
               }}
             >
-              DataBridge BI helps businesses turn messy data into clear, automated reporting using Power BI, CRM integrations, and API-driven pipelines.
+              DataBridge BI partners with growing businesses to design and implement scalable data systems that eliminate manual reporting, improve data reliability, and enable faster, more confident decision-making. Using Power BI, Power Platform, and advanced data integration techniques, we build end-to-end reporting ecosystems tailored to your business.
             </p>
             <div
               style={{
@@ -142,13 +147,13 @@ export default function DataBridgeBIWebsite() {
           </div>
 
           <div style={{ ...cardStyle, background: "#fffefb" }}>
-            <div style={{ fontSize: "1.15rem", fontWeight: 800, marginBottom: "16px" }}>What you get</div>
+            <div style={{ fontSize: "1.15rem", fontWeight: 800, marginBottom: "16px" }}>Business Outcomes</div>
             <div style={{ display: "grid", gap: "14px" }}>
               {[
-                "Clear, executive-ready dashboards",
-                "Automated reporting workflows",
-                "HubSpot, CRM, and API integration",
-                "Reliable data for better decisions",
+                "Executive-ready dashboards aligned with business KPIs",
+                "Fully automated reporting and data refresh pipelines",
+                "Seamless CRM, HubSpot, and API integrations",
+                "Accurate, trusted data for confident decision-making",
               ].map((item) => (
                 <div
                   key={item}
@@ -182,10 +187,10 @@ export default function DataBridgeBIWebsite() {
           >
             <div>
               <h2 style={{ fontSize: "2rem", margin: "0 0 10px 0", fontWeight: 800 }}>
-                See my Power BI and data analysis work
+                Selected Work & Data Solutions
               </h2>
               <p style={{ color: "#4b5563", fontSize: "1.05rem", lineHeight: 1.8, margin: 0 }}>
-                Explore dashboard and reporting examples from my GitHub portfolio and project repository.
+                Explore real-world examples of dashboards, integrations, and data solutions built to solve business reporting challenges.
               </p>
             </div>
             <div style={{ textAlign: "left" }}>
@@ -215,10 +220,10 @@ export default function DataBridgeBIWebsite() {
             <div style={sectionTitle}>About DataBridge BI</div>
             <div style={sectionTitle}>Founded by Afreen Fatima</div>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem" }}>
-              DataBridge BI was founded by Afreen Fatima, a Data Integration Specialist with over 7 years of experience in data science and data analytics. Her work focuses on transforming complex, disconnected business data into clear, automated, and reliable reporting systems.
+              DataBridge BI was founded by Afreen Fatima, a Data Integration Specialist with over 7 years of experience delivering data science and analytics solutions. She works with businesses to design robust data architectures that transform fragmented, unreliable data into scalable, automated reporting systems.
             </p>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem" }}>
-              She specializes in Power BI dashboards, API integrations, ETL pipelines, HubSpot reporting, and data workflow automation, helping businesses improve reporting accuracy, operational visibility, and retention insight.
+              Her expertise spans Power BI dashboards, API integrations, ETL pipelines, Power Platform dataflows, and CRM systems such as HubSpot. She focuses on building end-to-end data workflows that improve reporting accuracy, operational visibility, and customer retention insights.
             </p>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem", marginBottom: 0 }}>
               Afreen holds a Master’s degree in Data Science from Robert Gordon University and is PL-300 certified in Microsoft Power BI.
@@ -255,7 +260,7 @@ export default function DataBridgeBIWebsite() {
       </section>
 
       <section style={{ maxWidth: "1180px", margin: "0 auto", padding: "40px 24px" }}>
-        <div style={sectionTitle}>Services</div>
+        <div style={sectionTitle}>Core Services</div>
         <div
           style={{
             display: "grid",
@@ -276,10 +281,10 @@ export default function DataBridgeBIWebsite() {
         <div style={{ maxWidth: "980px", margin: "0 auto", padding: "70px 24px", textAlign: "center" }}>
           <div style={sectionTitle}>Why DataBridge BI</div>
           <h2 style={{ fontSize: "2.3rem", fontWeight: 800, margin: "0 0 16px 0" }}>
-            Most dashboards fail because of bad data, not bad visuals.
+            Most reporting problems are not dashboard issues — they are data system failures.
           </h2>
           <p style={{ color: "#4b5563", fontSize: "1.08rem", lineHeight: 1.9, margin: "0 auto", maxWidth: "760px" }}>
-            DataBridge BI focuses on the full data journey, from data cleaning and integration to Power BI dashboard delivery, so your reporting is trusted, automated, and actually useful.
+            DataBridge BI focuses on the full data lifecycle — from data ingestion and transformation to reporting and automation — ensuring your systems are scalable, reliable, and built for long-term business growth.
           </p>
         </div>
       </section>
@@ -288,10 +293,10 @@ export default function DataBridgeBIWebsite() {
         <div style={{ ...cardStyle, background: "#ffffff" }}>
           <div style={sectionTitle}>Get in touch</div>
           <h2 style={{ fontSize: "2.3rem", fontWeight: 800, margin: "0 0 16px 0" }}>
-            Ready to automate your reporting?
+            Ready to transform your data into a strategic advantage?
           </h2>
           <p style={{ color: "#4b5563", fontSize: "1.05rem", lineHeight: 1.8, marginBottom: "24px" }}>
-            Let’s build dashboards and systems that save time, improve visibility, and give you accurate business insight.
+            Let’s design and implement a data solution that eliminates manual work, improves visibility, and enables better, faster decision-making across your business.
           </p>
           <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "14px", marginBottom: "18px" }}>
             <a href="mailto:afreenn04@gmail.com" style={buttonPrimary}>
