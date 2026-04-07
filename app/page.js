@@ -1,169 +1,162 @@
 export default function DataBridgeBIWebsite() {
   const services = [
     {
-      title: "Power Platform & Dataflows",
-      description:
-        "Design and implement Power Platform solutions including Power Automate, Power Apps, and Power BI Dataflows for scalable and automated data processing.",
-    },
-    {
       title: "Power BI Dashboards",
       description:
-        "Interactive dashboards for sales, marketing, finance, and operations with a clear executive-friendly design.",
+        "Executive-ready dashboards designed for sales, marketing, finance, and operations reporting.",
+    },
+    {
+      title: "Power Platform Automation",
+      description:
+        "Automation workflows using Power Automate, Dataflows, and Power Platform tools to reduce manual work.",
     },
     {
       title: "CRM & API Integrations",
       description:
-        "HubSpot and third-party integrations that keep reporting accurate, automated, and connected.",
+        "HubSpot and third-party system integrations that create reliable, connected reporting workflows.",
     },
     {
-      title: "Data Cleaning & ETL",
+      title: "Data Cleaning & ETL Pipelines",
       description:
-        "Transform inconsistent spreadsheets and raw exports into structured, reporting-ready datasets.",
-    },
-    {
-      title: "Reporting Automation",
-      description:
-        "Replace manual weekly reports with automated refreshes, pipelines, and reliable reporting workflows.",
+        "Structured ETL pipelines that transform inconsistent, fragmented data into reporting-ready datasets.",
     },
   ];
 
-  const founderPoints = [
-    "7+ years in data science and analytics",
-    "Power BI specialist with PL-300 certification",
-    "Master’s in Data Science from Robert Gordon University",
-    "Experience in API integrations, ETL, CRM reporting, and Power Platform dataflows",
+  const caseStudies = [
+    {
+      title: "Automating CRM Data Integration from BigQuery to HubSpot",
+      problem:
+        "Business data needed to flow from BigQuery into HubSpot reliably without duplicate company records or manual intervention.",
+      solution:
+        "Designed and implemented a scalable Microsoft Fabric pipeline by connecting Dataflow Gen2 tables to a Fabric notebook, enabling URN-based matching and accurate syncing of advertiser names and MAIDs into HubSpot.",
+      result:
+        "Replaced manual Python scripts with a structured, repeatable process that improved data consistency, reduced operational effort, and created a strong foundation for broader CRM and campaign-level integrations.",
+      image:
+        "REPLACE_WITH_YOUR_UPLOADED_USE_CASE_IMAGE",
+    },
   ];
 
-  const sectionTitle = {
-    fontSize: "0.95rem",
+  const page = {
+    minHeight: "100vh",
+    background: "#fffdf7",
+    color: "#111827",
+    fontFamily: 'Inter, Arial, sans-serif',
+  };
+
+  const container = {
+    maxWidth: "1180px",
+    margin: "0 auto",
+    padding: "0 24px",
+  };
+
+  const sectionLabel = {
+    color: "#b7791f",
+    fontSize: "14px",
     fontWeight: 700,
-    color: "#ca8a04",
-    letterSpacing: "0.04em",
     textTransform: "uppercase",
-    marginBottom: "10px",
+    letterSpacing: "0.08em",
+    marginBottom: "12px",
   };
 
-  const cardStyle = {
+  const card = {
     background: "#ffffff",
-    border: "1px solid #f1f5f9",
-    borderRadius: "20px",
+    border: "1px solid #ece7da",
+    borderRadius: "22px",
     padding: "28px",
-    boxShadow: "0 10px 30px rgba(15, 23, 42, 0.06)",
+    boxShadow: "0 10px 25px rgba(17,24,39,0.05)",
   };
 
-  const buttonPrimary = {
+  const primaryButton = {
     display: "inline-block",
     background: "#facc15",
     color: "#111827",
-    padding: "14px 22px",
-    borderRadius: "14px",
-    fontWeight: 700,
     textDecoration: "none",
-    boxShadow: "0 8px 20px rgba(250, 204, 21, 0.35)",
+    fontWeight: 700,
+    padding: "14px 20px",
+    borderRadius: "14px",
+    boxShadow: "0 8px 18px rgba(250,204,21,0.35)",
   };
 
-  const buttonSecondary = {
+  const secondaryButton = {
     display: "inline-block",
     background: "#ffffff",
     color: "#111827",
-    padding: "14px 22px",
-    borderRadius: "14px",
-    fontWeight: 700,
     textDecoration: "none",
+    fontWeight: 700,
+    padding: "14px 20px",
+    borderRadius: "14px",
     border: "1px solid #d1d5db",
   };
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "#fffdf7",
-        color: "#111827",
-        fontFamily:
-          'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-      }}
-    >
+    <div style={page}>
       <section
         style={{
-          background: "linear-gradient(135deg, #fffdf7 0%, #fff7d6 100%)",
-          borderBottom: "1px solid #f3f4f6",
+          background: "linear-gradient(135deg, #fffdf7 0%, #fff5cc 100%)",
+          borderBottom: "1px solid #efe8d8",
         }}
       >
         <div
           style={{
-            maxWidth: "1180px",
-            margin: "0 auto",
-            padding: "80px 24px",
+            ...container,
+            paddingTop: "80px",
+            paddingBottom: "80px",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "36px",
+            gap: "32px",
             alignItems: "center",
           }}
         >
           <div>
-            <div style={sectionTitle}>DataBridge BI • Power BI • Data Integration</div>
+            <div style={sectionLabel}>DataBridge BI • Power BI • Power Platform • Data Integration</div>
             <h1
               style={{
-                fontSize: "clamp(2.5rem, 6vw, 4.8rem)",
+                fontSize: "clamp(2.6rem, 5vw, 4.8rem)",
                 lineHeight: 1.05,
-                margin: "0 0 22px 0",
                 fontWeight: 800,
+                margin: "0 0 20px 0",
               }}
             >
               Connecting your data.
               <br />
-              <span style={{ color: "#d4a300" }}>Powering your decisions.</span>
+              <span style={{ color: "#c98a00" }}>Powering your decisions.</span>
             </h1>
             <p
               style={{
-                fontSize: "1.14rem",
+                fontSize: "1.12rem",
                 lineHeight: 1.8,
                 color: "#4b5563",
-                maxWidth: "700px",
+                maxWidth: "720px",
                 marginBottom: "28px",
               }}
             >
-              DataBridge BI partners with growing businesses to design and implement scalable data systems that eliminate manual reporting, improve data reliability, and enable faster, more confident decision-making. Using Power BI, Power Platform, and advanced data integration techniques, we build end-to-end reporting ecosystems tailored to your business.
+              DataBridge BI helps businesses design scalable reporting systems using Power BI, Power Platform, CRM integrations, API connections, and ETL pipelines. The focus is on turning fragmented data into reliable, automated reporting that supports better business decisions.
             </p>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "14px",
-              }}
-            >
-              <a href="tel:0795376639" style={buttonPrimary}>
-                Book a Call · 0795376639
-              </a>
-              <a
-                href="https://github.com/Afreenn04/Data-Analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={buttonSecondary}
-              >
-                View Work
-              </a>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
+              <a href="tel:0795376639" style={primaryButton}>Book a Call</a>
+              <a href="https://databridge-bi-jpuk.vercel.app/" target="_blank" rel="noopener noreferrer" style={secondaryButton}>Visit Website</a>
+              <a href="https://github.com/Afreenn04/Data-Analysis" target="_blank" rel="noopener noreferrer" style={secondaryButton}>View Work</a>
             </div>
           </div>
 
-          <div style={{ ...cardStyle, background: "#fffefb" }}>
+          <div style={{ ...card, background: "#fffef9" }}>
             <div style={{ fontSize: "1.15rem", fontWeight: 800, marginBottom: "16px" }}>Business Outcomes</div>
-            <div style={{ display: "grid", gap: "14px" }}>
+            <div style={{ display: "grid", gap: "12px" }}>
               {[
                 "Executive-ready dashboards aligned with business KPIs",
-                "Fully automated reporting and data refresh pipelines",
-                "Seamless CRM, HubSpot, and API integrations",
-                "Accurate, trusted data for confident decision-making",
+                "Automated reporting and data refresh workflows",
+                "Connected CRM, API, and HubSpot data systems",
+                "Trusted data for faster, more confident decisions",
               ].map((item) => (
                 <div
                   key={item}
                   style={{
-                    padding: "14px 16px",
-                    borderRadius: "14px",
                     background: "#ffffff",
-                    border: "1px solid #f3f4f6",
+                    border: "1px solid #f1ead9",
+                    borderRadius: "14px",
+                    padding: "14px 16px",
                     color: "#374151",
-                    fontWeight: 500,
+                    lineHeight: 1.6,
                   }}
                 >
                   {item}
@@ -174,81 +167,101 @@ export default function DataBridgeBIWebsite() {
         </div>
       </section>
 
-      <section style={{ maxWidth: "1180px", margin: "0 auto", padding: "70px 24px 20px" }}>
-        <div style={{ ...cardStyle, display: "grid", gap: "22px" }}>
-          <div style={sectionTitle}>Portfolio</div>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "20px",
-              alignItems: "center",
-            }}
-          >
-            <div>
-              <h2 style={{ fontSize: "2rem", margin: "0 0 10px 0", fontWeight: 800 }}>
-                Selected Work & Data Solutions
-              </h2>
-              <p style={{ color: "#4b5563", fontSize: "1.05rem", lineHeight: 1.8, margin: 0 }}>
-                Explore real-world examples of dashboards, integrations, and data solutions built to solve business reporting challenges.
-              </p>
+      <section style={{ padding: "70px 0 20px" }}>
+        <div style={container}>
+          <div style={sectionLabel}>Featured Use Case</div>
+          {caseStudies.map((study) => (
+            <div
+              key={study.title}
+              style={{
+                ...card,
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+                gap: "28px",
+                alignItems: "start",
+              }}
+            >
+              <div>
+                <h2 style={{ fontSize: "1.5rem", fontWeight: 700, lineHeight: 1.3, margin: "0 0 16px 0" }}>
+                  {study.title}
+                </h2>
+                <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.05rem", margin: "0 0 16px 0" }}>
+                  We designed and implemented a scalable data pipeline to automate the flow of business data from BigQuery into HubSpot using Microsoft Fabric.
+                </p>
+                <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.05rem", margin: "0 0 16px 0" }}>
+                  By connecting Dataflow Gen2 tables to a Fabric notebook, we enabled reliable updates of HubSpot company records through URN-based matching, ensuring accurate syncing of advertiser names and MAIDs without creating duplicates.
+                </p>
+                <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.05rem", margin: 0 }}>
+                  This approach replaced manual Python scripts with a structured, repeatable process, improving data consistency and significantly reducing operational effort. It also establishes a strong foundation for extending into campaign-level syncing and broader CRM integrations as business needs evolve.
+                </p>
+              </div>
+              <div>
+                <div
+                  style={{
+                    borderRadius: "18px",
+                    overflow: "hidden",
+                    border: "1px solid #ece7da",
+                    background: "#fffef9",
+                  }}
+                >
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    style={{ width: "100%", display: "block", objectFit: "cover" }}
+                  />
+                </div>
+                <p style={{ color: "#6b7280", fontSize: "0.92rem", marginTop: "10px", marginBottom: 0 }}>
+                  Replace the image source in <code>caseStudies.image</code> with your uploaded file path or a public URL in your repo.
+                </p>
+              </div>
             </div>
-            <div style={{ textAlign: "left" }}>
-              <a
-                href="https://github.com/Afreenn04/Data-Analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={buttonPrimary}
-              >
-                Open GitHub Portfolio
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      <section style={{ maxWidth: "1180px", margin: "0 auto", padding: "40px 24px 20px" }}>
+      <section style={{ padding: "50px 0 20px" }}>
         <div
           style={{
+            ...container,
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
             gap: "24px",
-            alignItems: "stretch",
           }}
         >
-          <div style={cardStyle}>
-            <div style={sectionTitle}>About DataBridge BI</div>
-            <div style={sectionTitle}>Founded by Afreen Fatima</div>
-            <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem" }}>
-              DataBridge BI was founded by Afreen Fatima, a Data Integration Specialist with over 7 years of experience delivering data science and analytics solutions. She works with businesses to design robust data architectures that transform fragmented, unreliable data into scalable, automated reporting systems.
+          <div style={card}>
+            <div style={sectionLabel}>About DataBridge BI</div>
+            <div style={{ ...sectionLabel, marginBottom: "18px" }}>Founded by Afreen Fatima</div>
+            <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem", marginTop: 0 }}>
+              DataBridge BI was founded by Afreen Fatima, a Data Integration Specialist with over 7 years of experience in data science and analytics. The business focuses on helping teams move from fragmented, manual reporting to scalable, automated reporting systems.
             </p>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem" }}>
-              Her expertise spans Power BI dashboards, API integrations, ETL pipelines, Power Platform dataflows, and CRM systems such as HubSpot. She focuses on building end-to-end data workflows that improve reporting accuracy, operational visibility, and customer retention insights.
+              Expertise includes Power BI dashboards, Power Platform automation, ETL pipelines, API integrations, dataflows, and CRM systems such as HubSpot. The goal is to deliver data solutions that improve reporting accuracy, operational visibility, and decision-making.
             </p>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem", marginBottom: 0 }}>
-              Afreen holds a Master’s degree in Data Science from Robert Gordon University and is PL-300 certified in Microsoft Power BI.
+              Afreen holds a Master’s degree from Robert Gordon University and is PL-300 certified in Microsoft Power BI.
             </p>
           </div>
 
-          <div style={{ ...cardStyle, background: "#fff9db" }}>
-            <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#a16207", marginBottom: "10px" }}>
-              CEO & Founder
-            </div>
-            
-            <p style={{ color: "#4b5563", lineHeight: 1.8, marginTop: 0 }}>
+          <div style={{ ...card, background: "#fff9e6" }}>
+            <div style={sectionLabel}>CEO & Founder</div>
+            <p style={{ marginTop: 0, color: "#374151", lineHeight: 1.8 }}>
               Power BI Specialist | Data Integration & Pipeline Expert
             </p>
-            <div style={{ display: "grid", gap: "12px", marginTop: "20px" }}>
-              {founderPoints.map((point) => (
+            <div style={{ display: "grid", gap: "12px" }}>
+              {[
+                "7+ years in data science and analytics",
+                "Power BI specialist with PL-300 certification",
+                "Master’s from Robert Gordon University",
+                "Experience in Power Platform, ETL, HubSpot, APIs, and CRM reporting",
+              ].map((point) => (
                 <div
                   key={point}
                   style={{
                     background: "rgba(255,255,255,0.75)",
-                    border: "1px solid #fde68a",
-                    padding: "14px 16px",
+                    border: "1px solid #f2d989",
                     borderRadius: "14px",
+                    padding: "14px 16px",
                     color: "#374151",
-                    fontWeight: 500,
                   }}
                 >
                   {point}
@@ -259,55 +272,53 @@ export default function DataBridgeBIWebsite() {
         </div>
       </section>
 
-      <section style={{ maxWidth: "1180px", margin: "0 auto", padding: "40px 24px" }}>
-        <div style={sectionTitle}>Core Services</div>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "20px",
-          }}
-        >
-          {services.map((service) => (
-            <div key={service.title} style={cardStyle}>
-              <h3 style={{ fontSize: "1.3rem", margin: "0 0 12px 0", fontWeight: 800 }}>{service.title}</h3>
-              <p style={{ color: "#4b5563", lineHeight: 1.8, margin: 0 }}>{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section style={{ background: "#fff7d6", marginTop: "20px" }}>
-        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "70px 24px", textAlign: "center" }}>
-          <div style={sectionTitle}>Why DataBridge BI</div>
-          <h2 style={{ fontSize: "2.3rem", fontWeight: 800, margin: "0 0 16px 0" }}>
-            Most reporting problems are not dashboard issues — they are data system failures.
-          </h2>
-          <p style={{ color: "#4b5563", fontSize: "1.08rem", lineHeight: 1.9, margin: "0 auto", maxWidth: "760px" }}>
-            DataBridge BI focuses on the full data lifecycle — from data ingestion and transformation to reporting and automation — ensuring your systems are scalable, reliable, and built for long-term business growth.
-          </p>
-        </div>
-      </section>
-
-      <section style={{ maxWidth: "900px", margin: "0 auto", padding: "80px 24px", textAlign: "center" }}>
-        <div style={{ ...cardStyle, background: "#ffffff" }}>
-          <div style={sectionTitle}>Get in touch</div>
-          <h2 style={{ fontSize: "2.3rem", fontWeight: 800, margin: "0 0 16px 0" }}>
-            Ready to transform your data into a strategic advantage?
-          </h2>
-          <p style={{ color: "#4b5563", fontSize: "1.05rem", lineHeight: 1.8, marginBottom: "24px" }}>
-            Let’s design and implement a data solution that eliminates manual work, improves visibility, and enables better, faster decision-making across your business.
-          </p>
-          <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "14px", marginBottom: "18px" }}>
-            <a href="mailto:afreenn04@gmail.com" style={buttonPrimary}>
-              Get in Touch
-            </a>
-            <a href="tel:00447985376639" style={buttonSecondary}>
-              Call 00447985376639
-            </a>
+      <section style={{ padding: "50px 0 20px" }}>
+        <div style={container}>
+          <div style={sectionLabel}>Core Services</div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: "20px",
+            }}
+          >
+            {services.map((service) => (
+              <div key={service.title} style={card}>
+                <h3 style={{ fontSize: "1.25rem", fontWeight: 800, margin: "0 0 12px 0" }}>{service.title}</h3>
+                <p style={{ color: "#4b5563", lineHeight: 1.8, margin: 0 }}>{service.description}</p>
+              </div>
+            ))}
           </div>
-          <div style={{ color: "#6b7280", fontSize: "0.98rem" }}>
-            afreenn04@gmail.com
+        </div>
+      </section>
+
+      <section style={{ background: "#fff7d6", marginTop: "30px" }}>
+        <div style={{ ...container, maxWidth: "980px", textAlign: "center", paddingTop: "70px", paddingBottom: "70px" }}>
+          <div style={sectionLabel}>Why DataBridge BI</div>
+          <h2 style={{ fontSize: "2.2rem", fontWeight: 800, margin: "0 0 16px 0" }}>
+            Most reporting issues are not dashboard problems — they are data system problems.
+          </h2>
+          <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.06rem", margin: 0 }}>
+            DataBridge BI focuses on the full data lifecycle, from integration and transformation to reporting and automation, so your reporting is accurate, scalable, and genuinely useful to the business.
+          </p>
+        </div>
+      </section>
+
+      <section style={{ padding: "80px 0" }}>
+        <div style={{ ...container, maxWidth: "900px" }}>
+          <div style={{ ...card, textAlign: "center" }}>
+            <div style={sectionLabel}>Get in Touch</div>
+            <h2 style={{ fontSize: "2.2rem", fontWeight: 800, margin: "0 0 16px 0" }}>
+              Ready to improve your reporting systems?
+            </h2>
+            <p style={{ color: "#4b5563", lineHeight: 1.8, fontSize: "1.04rem", marginBottom: "24px" }}>
+              Whether you need a dashboard, automation workflow, ETL pipeline, or CRM integration, DataBridge BI can help you build a cleaner, more reliable reporting setup.
+            </p>
+            <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "14px", marginBottom: "16px" }}>
+              <a href="mailto:afreenn04@gmail.com" style={primaryButton}>Get in Touch</a>
+              <a href="tel:00447985376639" style={secondaryButton}>Call 00447985376639</a>
+            </div>
+            <div style={{ color: "#6b7280" }}>afreenn04@gmail.com</div>
           </div>
         </div>
       </section>
