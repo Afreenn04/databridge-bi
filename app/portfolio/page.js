@@ -24,6 +24,19 @@ export default function PortfolioPage() {
       ],
       tools: ["MySQL", "BigQuery", "Power BI", "ETL", "Reporting Pipeline"],
     },
+    {
+  title: "Customer Churn Analysis Dashboard (Power BI)",
+  image: "/churn-dashboard.png",
+  summary:
+    "Developed an interactive Power BI dashboard to analyse customer churn, identify key drivers, and support data-driven retention strategies.",
+  details: [
+    "Created a comprehensive churn overview with KPIs including revenue, contracts, and customer segmentation.",
+    "Enabled drill-down analysis across regions, advertisers, and sales teams.",
+    "Built visual breakdowns of churn categories and trends for faster insight.",
+    "Improved visibility into churn drivers to support proactive decision-making.",
+  ],
+  tools: ["Power BI", "DAX", "Data Modelling", "Dashboard Design", "Business Analytics"],
+},
   ];
 
   const page = {
