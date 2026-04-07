@@ -8,7 +8,7 @@ export default function DataBridgeBIWebsite() {
     {
       title: "Power Platform Automation",
       description:
-        "Automation workflows using Power Automate, Dataflows, and Power Platform tools to reduce manual work.",
+        "End-to-end Power Platform solutions using Power Automate, Dataflows, and Power Apps to automate business workflows, streamline data operations, and build scalable reporting systems.",
     },
     {
       title: "CRM & API Integrations",
