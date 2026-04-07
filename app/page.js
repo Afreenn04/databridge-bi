@@ -13,12 +13,12 @@ export default function DataBridgeBIWebsite() {
     {
       title: "CRM & API Integrations",
       description:
-        "HubSpot and third-party system integrations that create reliable, connected reporting workflows.",
+        "Design and implement CRM and API integrations (including HubSpot) to connect business systems, enable real-time data flow, and create a single source of truth for reporting and operations.",
     },
     {
       title: "Data Cleaning & ETL Pipelines",
       description:
-        "Structured ETL pipelines that transform inconsistent, fragmented data into reporting-ready datasets.",
+        "End-to-end ETL pipeline development to extract, transform, and standardize data from multiple sources, improving data quality, enabling reliable analytics, and supporting scalable reporting systems.",
     },
   ];
 
