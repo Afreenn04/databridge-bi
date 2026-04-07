@@ -3,7 +3,7 @@ export default function DataBridgeBIWebsite() {
     {
       title: "Power BI Dashboards",
       description:
-        "Executive-ready dashboards designed for sales, marketing, finance, and operations reporting.",
+        "Executive-ready Power BI dashboards designed to turn complex business data into clear, interactive, and actionable insights across sales, marketing, finance, and operations.",
     },
     {
       title: "Power Platform Automation",
