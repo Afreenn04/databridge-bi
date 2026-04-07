@@ -32,7 +32,7 @@ export default function DataBridgeBIWebsite() {
       result:
         "Replaced manual Python scripts with a structured, repeatable process that improved data consistency, reduced operational effort, and created a strong foundation for broader CRM and campaign-level integrations.",
       image:
-        "REPLACE_WITH_YOUR_UPLOADED_USE_CASE_IMAGE",
+        "/bigquery-hubspot.png",
     },
   ];
 
