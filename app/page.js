@@ -144,7 +144,7 @@ export default function DataBridgeBIWebsite() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <a href="tel:0795376639" style={primaryButton}>Book a Call</a>
               <a href="https://databridge-bi-jpuk.vercel.app/" target="_blank" rel="noopener noreferrer" style={secondaryButton}>Visit Website</a>
-              <a href="https://github.com/Afreenn04/Data-Analysis" target="_blank" rel="noopener noreferrer" style={secondaryButton}>View Work</a>
+              <a href="portfolio" target="_blank" rel="noopener noreferrer" style={secondaryButton}>View Work</a>
             </div>
           </div>
 
