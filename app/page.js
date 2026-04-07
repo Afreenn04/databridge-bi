@@ -195,6 +195,7 @@ export default function DataBridgeBIWebsite() {
                   This approach replaced manual Python scripts with a structured, repeatable process, improving data consistency and significantly reducing operational effort. It also establishes a strong foundation for extending into campaign-level syncing and broader CRM integrations as business needs evolve.
                 </p>
               </div>
+
               <div>
                 <div
                   style={{
@@ -210,9 +211,36 @@ export default function DataBridgeBIWebsite() {
                     style={{ width: "100%", display: "block", objectFit: "cover" }}
                   />
                 </div>
-                <p style={{ color: "#6b7280", fontSize: "0.92rem", marginTop: "10px", marginBottom: 0 }}>
-                  Replace the image source in <code>caseStudies.image</code> with your uploaded file path or a public URL in your repo.
-                </p>
+
+                <div style={{ marginTop: "16px" }}>
+                  <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#a16207", marginBottom: "8px" }}>
+                    Tech Stack
+                  </div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                    {[
+                      "BigQuery",
+                      "Microsoft Fabric",
+                      "Dataflow Gen2",
+                      "Fabric Notebook",
+                      "HubSpot API",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        style={{
+                          background: "#fff3c4",
+                          border: "1px solid #fde68a",
+                          borderRadius: "999px",
+                          padding: "6px 10px",
+                          fontSize: "0.85rem",
+                          color: "#92400e",
+                          fontWeight: 500,
+                        }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           ))}
