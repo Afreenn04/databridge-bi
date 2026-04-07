@@ -31,8 +31,17 @@ export default function DataBridgeBIWebsite() {
         "Designed and implemented a scalable Microsoft Fabric pipeline by connecting Dataflow Gen2 tables to a Fabric notebook, enabling URN-based matching and accurate syncing of advertiser names and MAIDs into HubSpot.",
       result:
         "Replaced manual Python scripts with a structured, repeatable process that improved data consistency, reduced operational effort, and created a strong foundation for broader CRM and campaign-level integrations.",
-      image:
-        "/bigquery-hubspot.png",
+      image: "/bigquery-hubspot.png",
+    },
+    {
+      title: "Daily Spend Report Migration: MySQL to BigQuery",
+      problem:
+        "Growing data volumes and performance limitations in MySQL were causing slow reporting and unreliable dashboard refreshes.",
+      solution:
+        "Migrated the daily spend reporting pipeline from MySQL to BigQuery and rebuilt ingestion and transformation logic to handle large-scale data efficiently.",
+      result:
+        "Improved query performance, reduced refresh failures, enhanced data accuracy, and enabled near real-time monitoring of campaign spend for better decision-making.",
+      image: "/mysql-bigquery.png",
     },
   ];
 
