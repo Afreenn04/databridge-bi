@@ -37,6 +37,19 @@ export default function PortfolioPage() {
   ],
   tools: ["Power BI", "DAX", "Data Modelling", "Dashboard Design", "Business Analytics"],
 },
+    {
+  title: "Revenue Insights Dashboard (Power BI)",
+  image: "/BusinessCategoryUseCase.png",
+  summary:
+    "Built an interactive Power BI dashboard to transform fragmented revenue data into clear, actionable insights for business decision-making.",
+  details: [
+    "Created a unified view of revenue across multiple categories and products.",
+    "Enabled identification of top-performing segments and revenue contributors.",
+    "Built monthly trend analysis to support forecasting and planning.",
+    "Designed interactive visuals for easy exploration and faster decision-making.",
+  ],
+  tools: ["Power BI", "DAX", "Data Modelling", "Dashboard Design", "Business Analytics"],
+},
   ];
 
   const page = {
