@@ -1,4 +1,7 @@
 # 📊 DataBridge BI – Power BI Dashboard Portfolio
+🚀 Power BI dashboards focused on business insights, reporting automation, and data-driven decision-making.
+
+💼 Open to freelance projects – dashboards, data cleaning, and reporting solutions.
 
 This repository showcases real-world Power BI dashboards focused on data analysis, reporting automation, and business insights.
 
@@ -12,6 +15,12 @@ This repository showcases real-world Power BI dashboards focused on data analysi
 * Built interactive visuals for decision-making
 
 🖼️ ![Revenue Dashboard](BusinessCategoryUseCase.png)
+### 1. Revenue Insights Dashboard
+- Consolidated revenue data across categories and products  
+- Identified top-performing segments  
+- Enabled forecasting through monthly analysis  
+
+👉 Built using Power BI with data modelling and DAX measures  
 
 ---
 
