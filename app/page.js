@@ -143,8 +143,15 @@ export default function DataBridgeBIWebsite() {
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "14px" }}>
               <a href="tel:0795376639" style={primaryButton}>Book a Call</a>
-              <a href="https://databridge-bi-jpuk.vercel.app/" target="_blank" rel="noopener noreferrer" style={secondaryButton}>Visit Website</a>
-              <a href="portfolio" target="_blank" rel="noopener noreferrer" style={secondaryButton}>View Work</a>
+              <a
+                href="https://databridge-bi-jpuk.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={secondaryButton}
+              >
+                Visit Website
+              </a>
+              <a href="/portfolio" style={secondaryButton}>View Work</a>
             </div>
           </div>
 
@@ -179,7 +186,7 @@ export default function DataBridgeBIWebsite() {
       <section style={{ padding: "70px 0 20px" }}>
         <div style={container}>
           <div style={sectionLabel}>Featured Use Case</div>
-          {caseStudies.map((study) => (
+          {caseStudies.slice(0, 1).map((study) => (
             <div
               key={study.title}
               style={{
@@ -267,29 +274,42 @@ export default function DataBridgeBIWebsite() {
         >
           <div style={card}>
             <div style={sectionLabel}>About DataBridge BI</div>
-            <div style={{ ...sectionLabel, marginBottom: "18px" }}>Founded by Afreen Fatima</div>
+            <div style={{ fontSize: "0.9rem", color: "#6b7280", marginBottom: "18px" }}>
+              Founded April 2025
+            </div>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem", marginTop: 0 }}>
-              DataBridge BI was founded by Afreen Fatima, a Data Integration Specialist with over 7 years of experience in data science and analytics. The business focuses on helping teams move from fragmented, manual reporting to scalable, automated reporting systems.
+              DataBridge BI helps businesses move from fragmented, manual reporting to scalable, automated reporting systems. The focus is on turning complex data into reliable reporting workflows that improve visibility, accuracy, and decision-making.
             </p>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem" }}>
-              Expertise includes Power BI dashboards, Power Platform automation, ETL pipelines, API integrations, dataflows, and CRM systems such as HubSpot. The goal is to deliver data solutions that improve reporting accuracy, operational visibility, and decision-making.
+              Expertise includes Power BI dashboards, Power Platform automation, ETL pipelines, API integrations, dataflows, and CRM systems such as HubSpot. DataBridge BI delivers end-to-end data solutions designed to reduce manual work and create clearer business insight.
             </p>
             <p style={{ color: "#4b5563", lineHeight: 1.9, fontSize: "1.03rem", marginBottom: 0 }}>
-              Afreen holds a Master’s degree from Robert Gordon University and is PL-300 certified in Microsoft Power BI.
+              Founded on hands-on experience in data science, analytics, integration, and reporting, DataBridge BI supports businesses that need reporting systems they can trust.
             </p>
           </div>
 
           <div style={{ ...card, background: "#fff9e6" }}>
-            <div style={sectionLabel}>CEO & Founder</div>
-            <p style={{ marginTop: 0, color: "#374151", lineHeight: 1.8 }}>
-              Power BI Specialist | Data Integration & Pipeline Expert
+            <div style={sectionLabel}>Our Team</div>
+            <p
+              style={{
+                marginTop: 0,
+                color: "#374151",
+                lineHeight: 1.7,
+                fontSize: "1.5rem",
+                fontWeight: 800,
+                marginBottom: "18px",
+              }}
+            >
+              The team at DataBridge BI are Power BI experts with experience across varied sectors and business functions.
             </p>
+
             <div style={{ display: "grid", gap: "12px" }}>
               {[
-                "7+ years in data science and analytics",
-                "Power BI specialist with PL-300 certification",
-                "Master’s from Robert Gordon University",
-                "Experience in Power Platform, ETL, HubSpot, APIs, and CRM reporting",
+                "7+ years of experience in data science, analytics, and reporting",
+                "Power BI specialists with PL-300 certification and strong dashboard expertise",
+                "Master’s-level data science background from Robert Gordon University",
+                "Experience across Power Platform, ETL, HubSpot, APIs, CRM reporting, and data integration",
+                "Industry exposure across media, advertising, healthcare, engineering, and business operations",
               ].map((point) => (
                 <div
                   key={point}
