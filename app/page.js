@@ -43,6 +43,84 @@ export default function DataBridgeBIWebsite() {
         "Improved query performance, reduced refresh failures, enhanced data accuracy, and enabled near real-time monitoring of campaign spend for better decision-making.",
       image: "/mysql-bigquery.png",
     },
+    <section style={{ padding: "40px 0 20px" }}>
+  <div style={container}>
+    <div style={sectionLabel}>Additional Use Case</div>
+
+    <div
+      style={{
+        ...card,
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+        gap: "28px",
+        alignItems: "start",
+      }}
+    >
+      <div>
+        <h2 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "16px" }}>
+          Regional Performance Dashboard (Month-over-Month Analysis)
+        </h2>
+
+        <p style={{ color: "#4b5563", lineHeight: 1.9, marginBottom: "14px" }}>
+          Built an interactive Power BI dashboard to track regional performance and analyse month-over-month trends across key operational metrics.
+        </p>
+
+        <p style={{ color: "#4b5563", lineHeight: 1.9, marginBottom: "14px" }}>
+          The solution provides a structured view of performance across regions, enabling better tracking of spend, live performance, and operational efficiency.
+        </p>
+
+        <p style={{ color: "#4b5563", lineHeight: 1.9 }}>
+          This dashboard helps teams quickly identify trends, monitor KPIs, and make faster, data-driven decisions.
+        </p>
+      </div>
+
+      <div>
+        <div
+          style={{
+            borderRadius: "18px",
+            overflow: "hidden",
+            border: "1px solid #ece7da",
+          }}
+        >
+          <img
+            src="/Region Month Over Month.png"
+            alt="Regional Performance Dashboard"
+            style={{ width: "100%" }}
+          />
+        </div>
+
+        <div style={{ marginTop: "16px" }}>
+          <div style={{ fontSize: "0.85rem", fontWeight: 700, color: "#a16207", marginBottom: "8px" }}>
+            Tech Stack
+          </div>
+
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+            {[
+              "Power BI",
+              "DAX",
+              "Data Modelling",
+              "ETL",
+              "Analytics",
+            ].map((tech) => (
+              <span
+                key={tech}
+                style={{
+                  background: "#fff3c4",
+                  border: "1px solid #fde68a",
+                  borderRadius: "999px",
+                  padding: "6px 10px",
+                  fontSize: "0.85rem",
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   ];
 
   const page = {
