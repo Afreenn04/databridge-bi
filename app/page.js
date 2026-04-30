@@ -1,6 +1,3 @@
-Paste this as your **full `app/page.js` code**:
-
-```javascript
 export default function DataBridgeBIWebsite() {
   const services = [
     {
@@ -157,7 +154,6 @@ export default function DataBridgeBIWebsite() {
               <a href="tel:0795376639" style={primaryButton}>
                 Book a Call
               </a>
-
               <a
                 href="https://databridge-bi-jpuk.vercel.app/"
                 target="_blank"
@@ -166,7 +162,6 @@ export default function DataBridgeBIWebsite() {
               >
                 Visit Website
               </a>
-
               <a href="/portfolio" style={secondaryButton}>
                 View Work
               </a>
@@ -579,8 +574,3 @@ export default function DataBridgeBIWebsite() {
     </div>
   );
 }
-```
-
-Use this only in `app/page.js`.
-
-For `app/portfolio/page.js`, send me that separately.
