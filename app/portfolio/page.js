@@ -10,7 +10,13 @@ export default function PortfolioPage() {
         "Enabled URN-based matching to update HubSpot company records accurately without duplicates.",
         "Improved data consistency and reduced manual operational effort.",
       ],
-      tools: ["BigQuery", "Microsoft Fabric", "Dataflow Gen2", "Fabric Notebook", "HubSpot API"],
+      tools: [
+        "BigQuery",
+        "Microsoft Fabric",
+        "Dataflow Gen2",
+        "Fabric Notebook",
+        "HubSpot API",
+      ],
     },
     {
       title: "Daily Spend Report Migration: MySQL to BigQuery",
@@ -25,31 +31,56 @@ export default function PortfolioPage() {
       tools: ["MySQL", "BigQuery", "Power BI", "ETL", "Reporting Pipeline"],
     },
     {
-  title: "Customer Churn Analysis Dashboard (Power BI)",
-  image: "/churn-dashboard.png",
-  summary:
-    "Developed an interactive Power BI dashboard to analyse customer churn, identify key drivers, and support data-driven retention strategies.",
-  details: [
-    "Created a comprehensive churn overview with KPIs including revenue, contracts, and customer segmentation.",
-    "Enabled drill-down analysis across regions, advertisers, and sales teams.",
-    "Built visual breakdowns of churn categories and trends for faster insight.",
-    "Improved visibility into churn drivers to support proactive decision-making.",
-  ],
-  tools: ["Power BI", "DAX", "Data Modelling", "Dashboard Design", "Business Analytics"],
-},
+      title: "Customer Churn Analysis Dashboard (Power BI)",
+      image: "/churn-dashboard.png",
+      summary:
+        "Developed an interactive Power BI dashboard to analyse customer churn, identify key drivers, and support data-driven retention strategies.",
+      details: [
+        "Created a comprehensive churn overview with KPIs including revenue, contracts, and customer segmentation.",
+        "Enabled drill-down analysis across regions, advertisers, and sales teams.",
+        "Built visual breakdowns of churn categories and trends for faster insight.",
+        "Improved visibility into churn drivers to support proactive decision-making.",
+      ],
+      tools: [
+        "Power BI",
+        "DAX",
+        "Data Modelling",
+        "Dashboard Design",
+        "Business Analytics",
+      ],
+    },
     {
-  title: "Revenue Insights Dashboard (Power BI)",
-  image: "/BusinessCategoryUseCase.png",
-  summary:
-    "Built an interactive Power BI dashboard to transform fragmented revenue data into clear, actionable insights for business decision-making.",
-  details: [
-    "Created a unified view of revenue across multiple categories and products.",
-    "Enabled identification of top-performing segments and revenue contributors.",
-    "Built monthly trend analysis to support forecasting and planning.",
-    "Designed interactive visuals for easy exploration and faster decision-making.",
-  ],
-  tools: ["Power BI", "DAX", "Data Modelling", "Dashboard Design", "Business Analytics"],
-},
+      title: "Revenue Insights Dashboard (Power BI)",
+      image: "/BusinessCategoryUseCase.png",
+      summary:
+        "Built an interactive Power BI dashboard to transform fragmented revenue data into clear, actionable insights for business decision-making.",
+      details: [
+        "Created a unified view of revenue across multiple categories and products.",
+        "Enabled identification of top-performing segments and revenue contributors.",
+        "Built monthly trend analysis to support forecasting and planning.",
+        "Designed interactive visuals for easy exploration and faster decision-making.",
+      ],
+      tools: [
+        "Power BI",
+        "DAX",
+        "Data Modelling",
+        "Dashboard Design",
+        "Business Analytics",
+      ],
+    },
+    {
+      title: "Regional Performance Dashboard (Month-over-Month Analysis)",
+      image: "/Region Month Over Month.png",
+      summary:
+        "Built an interactive Power BI dashboard to analyse regional performance and track month-over-month trends across key operational metrics.",
+      details: [
+        "Created a centralised view of performance across multiple regions.",
+        "Enabled month-over-month trend analysis for better tracking and forecasting.",
+        "Built KPI monitoring for spend, contract duration, and performance metrics.",
+        "Designed interactive filtering for deeper operational insights.",
+      ],
+      tools: ["Power BI", "DAX", "Data Modelling", "ETL", "Analytics"],
+    },
   ];
 
   const page = {
@@ -139,12 +170,24 @@ export default function PortfolioPage() {
               margin: 0,
             }}
           >
-            A selection of reporting, integration, and automation projects built to solve real business data challenges.
+            A selection of reporting, integration, and automation projects built
+            to solve real business data challenges.
           </p>
 
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "14px", marginTop: "24px" }}>
-            <a href="/" style={buttonPrimary}>Back to Home</a>
-            <a href="mailto:afreenn04@gmail.com" style={buttonSecondary}>Get in Touch</a>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "14px",
+              marginTop: "24px",
+            }}
+          >
+            <a href="/" style={buttonPrimary}>
+              Back to Home
+            </a>
+            <a href="mailto:afreenn04@gmail.com" style={buttonSecondary}>
+              Get in Touch
+            </a>
           </div>
         </div>
       </section>
@@ -175,6 +218,7 @@ export default function PortfolioPage() {
                   >
                     {project.title}
                   </h2>
+
                   <p
                     style={{
                       color: "#4b5563",
@@ -186,7 +230,13 @@ export default function PortfolioPage() {
                     {project.summary}
                   </p>
 
-                  <div style={{ display: "grid", gap: "10px", marginBottom: "18px" }}>
+                  <div
+                    style={{
+                      display: "grid",
+                      gap: "10px",
+                      marginBottom: "18px",
+                    }}
+                  >
                     {project.details.map((item) => (
                       <div
                         key={item}
@@ -215,7 +265,14 @@ export default function PortfolioPage() {
                     >
                       Tech Stack
                     </div>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "8px",
+                      }}
+                    >
                       {project.tools.map((tool) => (
                         <span
                           key={tool}
@@ -248,7 +305,11 @@ export default function PortfolioPage() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      style={{ width: "100%", display: "block", objectFit: "cover" }}
+                      style={{
+                        width: "100%",
+                        display: "block",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
                 </div>
@@ -260,4 +321,3 @@ export default function PortfolioPage() {
     </div>
   );
 }
-
